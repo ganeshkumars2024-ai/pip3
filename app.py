@@ -11,11 +11,11 @@ def run_tests():
     
     # Test Addition
     assert add(2, 3) == 5, "Addition test failed"
-    print("✓ Addition test passed")
+    print("[OK] Addition test passed")
     
     # Test Multiplication
     assert multiply(3, 4) == 12, "Multiplication test failed"
-    print("✓ Multiplication test passed")
+    print("[OK] Multiplication test passed")
     
     print("--- All tests completed successfully ---")
 

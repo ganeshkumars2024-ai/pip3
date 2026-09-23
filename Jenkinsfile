@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'python -m py_compile app.py'
+                bat '"C:\\Users\\HP\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" -m py_compile app.py'
                 echo 'Build successful: app.py compiled with no syntax errors'
             }
         }
@@ -23,7 +23,7 @@ pipeline {
             }
             steps {
                 echo 'Running extra check: verifying greet() output format...'
-                bat 'python -c "from app import greet; print(greet(\'Student\'))"'
+                bat '"C:\\Users\\HP\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" -c "from app import greet; print(greet(\'Student\'))"'
             }
         }
     }
